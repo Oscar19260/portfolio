@@ -1,0 +1,21 @@
+{
+  /* 
+<div className="sharingan">
+  <div className="interiorPart">
+    <div className="circle">
+      <div className="triangle"></div>
+    </div>
+
+    <div className="circle">
+      <div className="triangle"></div>
+    </div>
+
+    <div className="circle">
+      <div className="triangle"></div>
+    </div>
+
+    <div className="iris"></div>
+  </div>
+</div>
+*/
+}
