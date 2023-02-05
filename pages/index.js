@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 
@@ -15,8 +14,13 @@ const Index = () => (
             <div className="col-md-8">
               <h1>Oscar Delgadillo</h1>
               <h3>Computer Engineering Student</h3>
-              <p>About myself</p>
-              <a href="/hireme">Hire me, please</a>
+              <p>
+                👋 Hi, I'm Oscar.<br></br>
+                👀 I'm interested in Robotics and Computer Engineering.<br></br>
+                🌱 I'm currently learning AI, Data Science and Computer
+                Graphics.<br></br>
+              </p>
+              <a href="/hireme">Hire me, please :)</a>
             </div>
           </div>
         </div>
@@ -52,19 +56,21 @@ const Index = () => (
           <div className="card-body">
             <h1>Experience</h1>
             <ul>
-              {experiences.map(({ title, description, from, to }, index) => (
-                <li key={index}>
-                  <h3>{title}</h3>
-                  <h5>
-                    {from}-{to}
-                  </h5>
-                  <p>{description}</p>
-                </li>
-              ))}
+              {experiences.map(
+                ({ title, description, from, to, more }, index) => (
+                  <li key={index}>
+                    <h3>{title}</h3>
+                    <h5>
+                      {from}-{to}
+                    </h5>
+                    <p>{description}</p>
+                    <a className="btn btn-light" href={more} target="_blank">
+                      Know more
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
-            <Link legacyBehavior href="#">
-              <a className="btn btn-light">Know More</a>
-            </Link>
           </div>
         </div>
       </div>
@@ -86,7 +92,7 @@ const Index = () => (
                   </div>
                   <div className="card-body">
                     <h3>{name}</h3>
-                    <p>{description}</p>
+                    <p className="text-justify">{description}</p>
                     <a href={more} target="_blank">
                       Know more
                     </a>
@@ -99,7 +105,7 @@ const Index = () => (
       </div>
     </div>
 
-    {/* Personal projects section */}
+    {/* Personal projects section 
     <div className="row py-2">
       <div className="col-md-12">
         <div className="card card-body bg-dark">
@@ -110,7 +116,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </Layout>
 );
 

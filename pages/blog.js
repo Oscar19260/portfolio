@@ -17,6 +17,7 @@ const PostCard = ({ post }) => (
 
 const Blog = () => (
   <Layout footer={false} title="My Blog">
+    <h1>Nothing yet ...</h1>
     <div className="row py-4">
       {posts.map((post, i) => (
         <PostCard post={post} key={i} />

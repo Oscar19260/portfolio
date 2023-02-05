@@ -29,7 +29,9 @@ div#__next > div
     border-left-color: lightgreen;
 }
 
-
+.text-justify{
+    text-align:justify !important;
+}
 
 
 
