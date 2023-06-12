@@ -56,7 +56,7 @@ export const projects = [
         Using puzzlebot kit from Manchester Robotics with a Jetson nano. \
         Using transfer learning with pytorch for the signals and traffic lights detection.",
     image: "pb.jpg",
-    more: "https://github.com/Manchester-Robotics",
+    more: "https://github.com/carlosahs/robotica-movil",
   },
   {
     name: "Music Player",
